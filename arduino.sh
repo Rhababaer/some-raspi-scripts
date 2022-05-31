@@ -7,14 +7,24 @@ echo  "${BLUE}(1/5) install Arduino IDE${NC}"
 sudo apt install arduino
 
 echo  "${BLUE}(2/5) get Arduino dark theme${NC}"
+if [ ! -d "/usr/share/arduino/lib/theme_backup" ]
+then
 wget https://github.com/konrad91/OneDarkArduino/tree/master/theme
 
 sudo mv /usr/share/arduino/lib/theme /usr/share/arduino/lib/theme_backup
 sudo mv theme /usr/share/arduino/lib/
+else
+echo  "${BLUE}or not${NC}"
+fi
 
 echo  "${BLUE}(3/5) get cli interface${NC}"
+if [ -d "~/bin/arduino-cli" ]
+then
 mkdir ~/bin
 curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=~/bin sh
+else
+echo  "${BLUE}or not${NC}"
+fi
 
 echo  "${BLUE}(4/5) add esp8266 and esp32 to boards$ resources${NC}"
 echo boardsmanager.additional.urls=http://arduino.esp8266.com/stable/package_esp8266com_index.json, https://dl.espressif.com/dl/package_esp32_index.json >> .arduino15/preferences.txt
