@@ -9,10 +9,11 @@ sudo apt install arduino
 echo  "${BLUE}(2/5) get Arduino dark theme${NC}"
 if [ ! -d "/usr/share/arduino/lib/theme_backup" ]
 then
-wget https://github.com/konrad91/OneDarkArduino/tree/master/theme
-
+cd
+git clone https://github.com/konrad91/OneDarkArduino.git
 sudo mv /usr/share/arduino/lib/theme /usr/share/arduino/lib/theme_backup
-sudo mv theme /usr/share/arduino/lib/
+sudo cp OneDarkArduino/theme /usr/share/arduino/lib/
+sudo rm -r OneDarkArduino
 else
 echo  "${BLUE}or not${NC}"
 fi
