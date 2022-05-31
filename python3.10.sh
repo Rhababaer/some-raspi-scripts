@@ -14,7 +14,7 @@ echo -e "${BLUE}(3/6)clear dependencies${NC}"
 sudo apt-get install build-essential gdb lcov pkg-config libbz2-dev libffi-dev libgdbm-dev libgdbm-compat-dev liblzma-dev libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev lzma lzma-dev tk-dev uuid-dev zlib1g-dev
 
 echo -e "${BLUE}(4/6) set configuration parameters${NC}"
- cd /Python-3.10.2
+ cd Python-3.10.2/
  ./configure --enable-optimizations --with-openssl="/usr" --libdir=/usr/local/lib
 
  echo -e "${BLUE}(5/6) install Python 3.10.2${NC}"
