@@ -13,6 +13,7 @@ sudo mv /usr/share/arduino/lib/theme /usr/share/arduino/lib/theme_backup
 sudo mv theme /usr/share/arduino/lib/
 
 echo -e "${BLUE}(3/5) get cli interface${NC}"
+mkdir ~/bin
 curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=~/bin sh
 
 echo -e "${BLUE}(4/5) add esp8266 and esp32 to boards$ resources{NC}"
