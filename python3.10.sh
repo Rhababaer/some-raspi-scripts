@@ -4,6 +4,7 @@ BLUE='\033[1;33m'
 NC='\033[0m'
 
 echo -e "${BLUE}(1/6) Download Python 3.10.2${NC}"
+cd
 wget https://www.python.org/ftp/python/3.10.2/Python-3.10.2.tgz
 
 echo -e "${BLUE}(2/6) unzip files${NC}"

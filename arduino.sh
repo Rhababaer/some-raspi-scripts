@@ -16,7 +16,7 @@ echo -e "${BLUE}(3/5) get cli interface${NC}"
 mkdir ~/bin
 curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=~/bin sh
 
-echo -e "${BLUE}(4/5) add esp8266 and esp32 to boards$ resources{NC}"
+echo -e "${BLUE}(4/5) add esp8266 and esp32 to boards$ resources${NC}"
 echo boardsmanager.additional.urls=http://arduino.esp8266.com/stable/package_esp8266com_index.json, https://dl.espressif.com/dl/package_esp32_index.json >> .arduino15/preferences.txt
 arduino-cli core update-index
 arduino-cli core install esp32:esp32 --additional-urls "https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json"
