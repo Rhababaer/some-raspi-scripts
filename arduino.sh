@@ -12,7 +12,7 @@ then
 cd
 git clone https://github.com/konrad91/OneDarkArduino.git
 sudo mv /usr/share/arduino/lib/theme /usr/share/arduino/lib/theme_backup
-sudo cp OneDarkArduino/theme /usr/share/arduino/lib/
+sudo mv OneDarkArduino/theme /usr/share/arduino/lib/
 sudo rm -r OneDarkArduino
 else
 echo  "${BLUE}or not${NC}"
