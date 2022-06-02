@@ -9,6 +9,6 @@
 + installs Arduino IDE
 + [CLI](https://www.arduino.cc/pro/cli)
 + [OneDarkArduino Theme](https://github.com/konrad91/OneDarkArduino)
-+ if run twice
++ if run twice:
   + ESP32, ESP8266 boards
   + Adafruit MAX31856, Adafruit INA219, Adafruit MCP4725 libraries
