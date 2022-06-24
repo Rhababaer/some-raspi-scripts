@@ -7,7 +7,7 @@
 
 ## arduino.sh
 + installs Arduino IDE
-+ [CLI](https://www.arduino.cc/pro/cli) [GitHub](https://github.com/arduino/arduino-cli/)
++ [CLI](https://www.arduino.cc/pro/cli) - [GitHub](https://github.com/arduino/arduino-cli/)
 + [OneDarkArduino Theme](https://github.com/konrad91/OneDarkArduino)
 + if run twice (the CLI needs a new session to work):
   + ESP32, ESP8266 boards
